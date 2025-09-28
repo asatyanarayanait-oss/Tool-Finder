@@ -30,13 +30,6 @@ Tool Finder is an AI-powered smart tool recommendation platform designed to elim
 - 🔐 **Privacy-First Options**: GDPR compliant and local/on-premise solutions
 - 📱 **Progressive Web App**: Offline functionality and native app experience
 
-### User Experience
-- 🎨 **Modern UI**: Glass morphism design with gradient animations
-- 📊 **Dashboard Analytics**: Search history and usage statistics
-- 🔑 **API Key Management**: Secure, encrypted storage of user credentials
-- 📱 **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- ⚡ **Fast Performance**: Optimized loading and caching strategies
-
 ## 🛠️ Technical Stack
 
 ### Backend Technologies
@@ -150,36 +143,10 @@ docker-compose down
 
 ### 🌐 Accessing the Application
 
-1. Open your browser and navigate to `http://localhost:3000`
+1. Open your browser and navigate to `http://localhost:3000` or the port it is hosted on
 2. Create a new account or login
 3. Configure your Gemini API key in the dashboard
 4. Start getting AI-powered tool recommendations!
-
-## 📖 Usage Guide
-
-### Getting Started
-1. **Registration**: Create account with username and secure password
-2. **API Key Setup**: Add your Google Gemini API key in dashboard settings
-3. **First Search**: Describe your task and specify requirements
-4. **Review Results**: Analyze recommendations with confidence scores
-5. **Save & Compare**: Save searches and compare different tools
-
-### Search Best Practices
-- Be specific about your use case and requirements
-- Include budget constraints for relevant recommendations
-- Specify platform preferences (Windows, macOS, Linux, Web)
-- Mention privacy requirements if applicable
-- Add context about team size or usage scale
-
-## 🔒 Security Features
-
-- **Password Security**: bcrypt hashing with configurable salt rounds
-- **Session Management**: Secure HTTP-only cookies with expiration
-- **API Key Encryption**: User API keys stored securely
-- **Rate Limiting**: Protection against abuse (100 requests/15 minutes)
-- **Input Validation**: Server-side validation for all user inputs
-- **CSRF Protection**: Session-based CSRF protection
-- **Security Headers**: Helmet.js for security header management
 
 ## 🏗️ Architecture Overview
 
@@ -220,71 +187,6 @@ graph TB
     H --> I
     H --> J
 ```
-
-## 📊 API Documentation
-
-### Authentication Endpoints
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `POST /api/auth/logout` - User logout
-- `GET /api/auth/status` - Authentication status
-
-### Search Endpoints
-- `POST /api/search/recommend` - Get AI recommendations
-- `POST /api/search/save` - Save search results
-- `GET /api/search/history` - Get search history
-- `GET /api/search/:id` - Get specific search
-
-### User Management
-- `GET /api/user/profile` - Get user profile
-- `GET /api/user/stats` - Get user statistics
-- `PUT /api/user/api-key` - Update API key
-- `DELETE /api/user/api-key` - Remove API key
-
-## 🚨 Troubleshooting
-
-### Common Issues
-
-**Port Already in Use**
-```bash
-# Change port in .env file or kill existing process
-lsof -ti:3000 | xargs kill -9
-```
-
-**Database Permission Errors**
-```bash
-# Ensure write permissions to database directory
-chmod 755 database/
-```
-
-**API Key Issues**
-- Verify your Gemini API key is valid
-- Check API key permissions and quotas
-- Ensure network connectivity to Google APIs
-
-**Node.js Version Issues**
-```bash
-# Check Node.js version
-node --version
-# Should be 14.0.0 or higher
-```
-
-## 🤝 Contributing
-
-This is a prototype project for the Eureka Juniors program. While not actively accepting contributions, feedback and suggestions are welcome.
-
-## 📄 License
-
-MIT License - See LICENSE file for details.
-
-## 📧 Contact & Support
-
-**Developer**: Abhi Ram  
-**ID**: Ej25n566393  
-**Email**: a.m.s.s.abhiram492@gmail.com  
-**Team**: EJ25T518480 - "Abhi's team"  
-**Program**: Eureka Juniors Stage 2 Intermediate Task  
-
----
-
-⭐ **Built with passion for solving real-world problems through AI-powered solutions**
+ ## Disclaimer
+ 
+ This is a prototype that is build for eureka juniors by abhiram(with the registered email "a.m.s.s.abhiram492@gmail.com) who is part of the "Abhi's Team" with team id:EJ25T518480.
