@@ -3,9 +3,9 @@
 
 // API Configuration
 //gemini 2.5 flash
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/models/gemini-flash-latest:generateContent';
 //gemini 2.5 flash lite
-//const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent';
+//const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/models/gemini-flash-lite-latest:generateContent';
 
 // Performance-optimized Animation Controller
 class AnimationController {
